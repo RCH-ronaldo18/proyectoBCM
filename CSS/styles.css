@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+html{
+    box-sizing: border-box;
+    font-size: 65%;
+}
+
+*,
+*::before
+*::after{
+    box-sizing: inherit;
+}
+*{
+    font-family: Poppins;
+}
+#pageBCA #HeaderBCA.fixed-header{
+    background-color: #ffffff;
+}
+
+#HeaderBCA.fixed-header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: height .3s;
+    background-color: rgba(255,255, 255,.9);
+}
+
+#site-logo a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#site-logo img {
+    width: 180px;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul li a {
+    text-decoration: none;
+    font-size: 22px;
+
+}
+.wrapper{
+    width: 90%;
+    margin: auto;
+
+    height: 100%;
+}
+
+#site-logo{
+    float: left;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    float: right;
+    margin-top: 60px;
+}
+.d-flex{
+    display: flex;
+}
+.link-header{
+    margin: 65px 30px;
+    position: relative;
+}
+.nav-links a {
+    text-decoration: none; /* Evitar el subrayado predeterminado */
+}
+
+.nav-links a:hover {
+    border-bottom: 3.1px solid #ef9d0c; /* Ajusta el grosor y el color del subrayado */
+    margin-bottom: 3px; /* Ajusta el espacio entre el texto y el subrayado */
+}
+
+
+/* Estilo para las opciones del menú desplegable */
+.submenu {
+    display: none;
+    position: absolute;
+    top: 100%; 
+    left: 0;
+    background-color: #fff; 
+    border: 1px solid #fff; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    z-index: 100; 
+    padding: 5px;
+    width: 100%;
+}
+
+
+.link-header:hover .submenu {
+    display: block; 
+}
+
+/* Estilo para las opciones del menú desplegable */
+.submenu li {
+    display: block;
+    margin: 5px 0;
+}
+.submenu li a{
+    text-decoration: none;
+    color: black;
+}
