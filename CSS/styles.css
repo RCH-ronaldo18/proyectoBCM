@@ -1,89 +1,99 @@
+/* Importa la fuente Poppins desde Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-html{
-    box-sizing: border-box;
-    font-size: 65%;
-}
 
-*,
-*::before
-*::after{
-    box-sizing: inherit;
-}
+/* Estilo global para todos los elementos en la página */
 *{
-    font-family: Poppins;
-}
-#pageBCA #HeaderBCA.fixed-header{
-    background-color: #ffffff;
+    font-family: 'Poppins', sans-serif; /* Define la fuente predeterminada para la página */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-#HeaderBCA.fixed-header{
-    position: fixed;
-    top: 0;
-    left: 0;
+/* Estilos para el encabezado */
+header{
     width: 100%;
-    z-index: 1000;
-    transition: height .3s;
-    background-color: rgba(255,255, 255,.9);
+    height: 8em;
 }
 
+/* Estilos para el logo del sitio */
 #site-logo a {
     text-decoration: none;
     color: inherit;
 }
 
 #site-logo img {
-    width: 180px;
+    width: 140px; /* Ajusta el ancho del logo */
 }
 
+/* Estilos para la lista no ordenada */
 ul li {
-    list-style: none;
+    list-style: none; /* Elimina los puntos de la lista */
+    padding: 0 15px; /* Añade espacio interno a los elementos de la lista */
 }
 
+/* Estilos para los enlaces dentro de la lista */
 ul li a {
     text-decoration: none;
-    font-size: 22px;
-
-}
-.wrapper{
-    width: 90%;
-    margin: auto;
-
-    height: 100%;
+    font-size: 22px; /* Define el tamaño de fuente para los enlaces */
 }
 
+/* Estilos para el contenedor del encabezado */
+.contenedor-header{
+    width: 100%;
+    height: 9em;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Estilos para el logo del sitio en el encabezado */
 #site-logo{
-    float: left;
     height: 100%;
     display: flex;
     align-items: center;
 }
 
-.nav-links{
+/* Estilos para la navegación en el encabezado */
+.navegacion{
     height: 100%;
     display: flex;
     align-items: center;
-    float: right;
-    margin-top: 60px;
+    float: right; /* Estilo flotante a la derecha */
 }
-.d-flex{
+
+/* Estilos para la lista de elementos en la navegación */
+.lista-elementos{
     display: flex;
 }
-.link-header{
-    margin: 65px 30px;
+
+/* Estilos para cada elemento de la lista de navegación */
+.elemento{
+    margin: 0 25px;
     position: relative;
-}
-.nav-links a {
-    text-decoration: none; /* Evitar el subrayado predeterminado */
+    width: 150px;
+    text-align: center;
 }
 
-.nav-links a:hover {
+/* Estilos para los enlaces dentro de los elementos de la lista de navegación */
+.elemento a {
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.elemento li {
+    text-align: center;
+}
+
+/* Estilos para el efecto hover en la navegación */
+.navegacion a:hover {
     border-bottom: 3.1px solid #ef9d0c; /* Ajusta el grosor y el color del subrayado */
     margin-bottom: 3px; /* Ajusta el espacio entre el texto y el subrayado */
 }
 
-
-/* Estilo para las opciones del menú desplegable */
+/* Estilos para las opciones del menú desplegable */
 .submenu {
+    text-align: center;
+    margin-top: 2px;
     display: none;
     position: absolute;
     top: 100%; 
@@ -92,21 +102,66 @@ ul li a {
     border: 1px solid #fff; 
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
     z-index: 100; 
-    padding: 5px;
+    padding: 10px;
     width: 100%;
 }
 
-
-.link-header:hover .submenu {
+/* Mostrar el menú desplegable al hacer hover en el elemento padre */
+.elemento:hover .submenu {
     display: block; 
 }
 
-/* Estilo para las opciones del menú desplegable */
-.submenu li {
-    display: block;
-    margin: 5px 0;
-}
+/* Estilos para las opciones dentro del menú desplegable */
 .submenu li a{
-    text-decoration: none;
+    font-size: 14px;
     color: black;
+}
+
+/* Estilos para el separador entre elementos */
+.separador-elementos{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+/* Estilos para el pie de página */
+#footerBCA{
+    width: 100%;
+    height: 100%;
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Estilos para el contenedor de información de contacto en el pie de página */
+.contenedor-contacto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilos para la imagen de contacto en el pie de página */
+.img{
+    width: 55px;
+    height: 55px;
+    border: 3px solid black;
+    border-radius: 50%;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 35px;
+}
+
+/* Estilos para la información de contacto en el pie de página */
+.texto-contacto{
+    margin-left: 10px;
+}
+
+.texto-contacto span{
+    font-weight: bold;
+}
+
+.texto-contacto p{
+    max-width: 200px;
 }

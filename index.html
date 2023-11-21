@@ -1,94 +1,169 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon"  href="img/icon1.png" type="image/x-icon"/>
+    <link rel="shortcut icon" href="img/icon1.png" type="image/x-icon" />
     <link rel="stylesheet" href="CSS/styles.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>BCA GENERAL SERVICES</title>
 </head>
+
 <body>
-    <div id="pageBCA">
+    <header>
+        <div class="contenedor-header">
+            <div id="site-logo">
+                <a href="index.html" title="BCA">
+                    <img src="img/logoRecortado.jpg" alt="logo BCA">
+                </a>
+            </div>
+            <div class="navegacion">
+                <nav>
+                    <ul class="lista-elementos">
 
-            <!--Header-->
-        <div id="HeaderBCA" class="fixed-header marked" style="margin-top: 0px;">
-            <header id="header">
-                <div class="wrapper">
-                <div id="site-logo">
-                    <a href="" title="BCA">
-                        <img src="img/logo.jpg" alt="logo BCA">
-                    </a>
-                </div>
-                <div class="nav-links">
-                    <nav>
-                        <ul class="d-flex">
-                            <li class="link-header" style="margin:15px 0;padding:0 15px;">
-                                <a>ORGANIZACIÓN</a>
+                        <li class="elemento">
+                            <a>ORGANIZACIÓN</a>
+                        </li>
 
+                        <p class="separador-elementos">|</p>
 
-                            </li>
-                            <li class="link-header" style="margin:15px 0;padding:0 15px;">
-                                <a>SERVICIOS</a>
-                       
-                               
-                                    <ul class="submenu" style="padding:10px;">
-                                        <li style="text-align:center;"><a style="font-size:14px;font-size:semibold;" href="#">METALURGIA</a></li>
-                                        <li style="text-align:center;"><a style="font-size:14px;font-size:semibold;" href="#">INGENIERÍA</a></li>
-                                        <li style="text-align:center;"><a style="font-size:14px;font-size:semibold;" href="#">FABRICACIÓN</a></li>
-                                        <li style="text-align:center;"><a style="font-size:14px;font-size:semibold;" href="#">CONSTRUCCIÓN</a></li>
-                                        <li style="text-align:center;"><a style="font-size:14px;font-size:semibold;" href="#">O&M</a></li>                       
-                                    </ul>
-                    
-                            </li>
-                            <li class="link-header" style="margin:15px 0;padding:0 15px;">
-                                <a>PROYECTOS</a>
-                                <ul class="submenu" style="padding:10px;">
-                                    <li style="text-align:center;"><a style="font-size:14px;font-size:semibold;" href="#">METALURGIA</a></li>
-                                    <li style="text-align:center;"><a style="font-size:14px;font-size:semibold;" href="#">INGENIERÍA</a></li>
-                                    <li style="text-align:center;"><a style="font-size:14px;font-size:semibold;" href="#">FABRICACIÓN</a></li>
-                                    <li style="text-align:center;"><a style="font-size:14px;font-size:semibold;" href="#">CONSTRUCCIÓN</a></li>                    
-                                </ul>
+                        <li class="elemento">
+                            <a>SERVICIOS</a>
+                            <ul class="submenu" style="padding:10px;">
+                                <li>
+                                    <a href="#">METALURGIA</a>
+                                </li>
 
-                            </li>
-                            <li class="link-header" style="margin:15px 0;padding:0 15px;">
-                                <a>CONTÁCTENOS</a>
-                                <ul class="submenu" style="padding:10px;">
-                                    <li style="text-align:center;"><a style="font-size:14px;font-size:semibold;" href="#">PERÚ</a></li>
+                                <li>
+                                    <a href="#">INGENIERÍA</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">FABRICACIÓN</a>
+                                </li>
+
+                                <li>
+                                    <a href="#">CONSTRUCCIÓN</a>
+                                </li>
+                                <li>
+                                    <a href="#">O&M</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <p class="separador-elementos">|</p>
+
+                        <li class="elemento">
+                            <a>PROYECTOS</a>
+                            <ul class="submenu">
+                                <li style="text-align:center;">
+                                    <a href="#">METALURGIA</a>
+                                </li>
+                                <li>
+                                    <a href="#">INGENIERÍA</a>
+                                </li>
+                                <li>
+                                    <a href="#">FABRICACIÓN</a>
+                                </li>
+                                <li>
+                                    <a href="#">CONSTRUCCIÓN</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <p class="separador-elementos">|</p>
+
+                        <li class="elemento">
+                            <a>CONTÁCTENOS</a>
+                            <ul class="submenu">
+                                <li><a href="#">PERÚ</a></li>
                                 <!--<li><a href="#">Bolivia</a></li> -->
-                                <!--<li><a href="#">Chile</a></li> --> 
+                                <!--<li><a href="#">Chile</a></li> -->
                                 <!--<li><a href="#">Ecuador</a></li> -->
-                                <!--<li><a href="#">Trabaja con nosotros</a></li> -->                                 
-                                </ul>
+                                <!--<li><a href="#">Trabaja con nosotros</a></li> -->
+                            </ul>
+                        </li>
 
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-                </div>
-
-            </header>
-
-
-
+                    </ul>
+                </nav>
+            </div>
         </div>
+    </header>
 
-            <!--portada-->
-            <div></div>
+        <!--portada-->
+        <div></div>
 
-            <!-- categorias  -->
-            <section></section>
-            
-            <!-- Nuestras ofertas del dia -->
-            <main></main>
+        <!-- categorias  -->
+        <section></section>
 
-            <!-- Ayudanos a mejorar -->
-            <section></section>
+        <!-- Nuestras ofertas del dia -->
+        <main></main>
 
-            <!-- footer -->
-            <div id="FooterBCA"></div>
+        <!-- Ayudanos a mejorar -->
+        <section></section>
 
-            
+        <!-- footer -->
+        <footer>
+            <div id="footerBCA">
+                <div class="contacto">
+                    <div class="contenedor-contacto">
+                        <div class="img">
+                            <i class="fa-regular fa-building"></i>
+                        </div>
+                        <div class="texto-contacto">
+                            <span class="titulo">Oficina Principal</span>
+                            <p>Jirón Canto Rodado 534 San Juan de Lurigancho</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="contacto">
+                    <div class="contenedor-contacto">
+                        <div class="img">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div class="texto-contacto">
+                        <span class="titulo">Teléfono</span>
+                        <p>+51974132970</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <!--
+                <div id="contacto">
+                    <div class="contenedor-contacto">
+                        <div class="img">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <span class="titulo">Planta de fabricaciónes metalmecanicas</span>
+                        Av. Cajamarquilla Mz. D Lt. 4 Urb. Nievería Lurigancho - Lima - Perú.
+                    </div>
+                </div>
+                -->
+                <div class="contacto">
+                    <div class="contenedor-contacto">
+                        <div class="img">
+                            <i class="fa-regular fa-envelope"></i>
+                        </div>
+                        <div class="texto-contacto">
+                            <span class="titulo">Correo</span>
+                            <p>abelinosalazar@bca.pe</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+
     </div>
 </body>
+
 </html>
