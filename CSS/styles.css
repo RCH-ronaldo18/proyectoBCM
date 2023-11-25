@@ -58,6 +58,7 @@ ul li a {
     display: flex;
     align-items: center;
     float: right; /* Estilo flotante a la derecha */
+    background: #ffff;
 }
 
 /* Estilos para la lista de elementos en la navegación */
@@ -75,7 +76,7 @@ ul li a {
 
 /* Estilos para los enlaces dentro de los elementos de la lista de navegación */
 .elemento a {
-    color: #000;
+    color: #000000;
     font-size: 18px;
     font-weight: 600;
 }
@@ -116,6 +117,84 @@ ul li a {
     font-size: 14px;
     color: black;
 }
+
+
+
+
+
+
+/* parte del formulario*/
+
+.formulario a{
+    margin-bottom: 10px;
+    margin-top: 5px;
+    margin-right: 42%;
+    text-decoration: none;
+    width: 57.5%;
+}
+
+.formulario a i{
+    color:#e39403 ;
+}
+
+.formulario i{
+    margin-right: 10%;
+}
+
+.formulario-y-mapa {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    flex-wrap: wrap; 
+    grid-gap: 5%;
+}
+
+/* Estilos para el contenedor del formulario */
+.formulario {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+
+    margin-top: 20px; 
+}
+
+/* Estilos para los campos del formulario */
+.formulario input,
+.formulario textarea,
+.formulario select {
+    width: 100%;
+    padding: 10px 10px;
+    font-size: 16px;
+    border: 1px solid #dbdbdb;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    outline: 0;
+}
+
+/* Estilos para el botón del formulario */
+.formulario button {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    outline: 0;
+    background: #e39403;
+    color: white;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+.formulario button:hover {
+    background: #e39403;
+}
+/* HASTA ACA BRRR
+
+
+
+
 
 /* Estilos para el separador entre elementos */
 .separador-elementos{
