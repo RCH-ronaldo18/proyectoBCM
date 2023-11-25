@@ -125,7 +125,32 @@ ul li a {
 
 /* parte del formulario*/
 
+/* Estilos para el contenedor del formulario */
+.img-contacto img{
+    width: 100%;
+    height: 480px;
+}
+
+.formulario {
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column; 
+    margin: 20px 0; 
+    
+}
+
+.formulario h2{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.formulario p{
+    font-size: 14px;
+}
+
 .formulario a{
+    color: #000000;
     margin-bottom: 10px;
     margin-top: 5px;
     margin-right: 42%;
@@ -138,7 +163,7 @@ ul li a {
 }
 
 .formulario i{
-    margin-right: 10%;
+    margin-right: 4%;
 }
 
 .formulario-y-mapa {
@@ -149,16 +174,7 @@ ul li a {
     grid-gap: 5%;
 }
 
-/* Estilos para el contenedor del formulario */
-.formulario {
-    width: 100%;
-    max-width: 400px;
-    display: flex;
-    flex-direction: column; 
-    align-items: center; 
 
-    margin-top: 20px; 
-}
 
 /* Estilos para los campos del formulario */
 .formulario input,
@@ -205,6 +221,7 @@ ul li a {
 
 /* Estilos para el pie de página */
 #footerBCA{
+    background: #f3ac25;
     width: 100%;
     height: 100%;
     display: inline-flex;
@@ -243,4 +260,91 @@ ul li a {
 
 .texto-contacto p{
     max-width: 200px;
+}
+
+/* ============================ Organizaacion ============================*/
+
+
+
+
+
+.contenedor-navegacion-organizacion{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* Estilos para la navegación en el encabezado */
+.navegacion-organizacion{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    float: right; /* Estilo flotante a la derecha */
+    background: #ffff;
+}
+
+/* Estilos para la lista de elementos en la navegación */
+.lista-elementos-organizacion{
+    display: flex;
+}
+
+/* Estilos para cada elemento de la lista de navegación */
+.elemento-organizacion{
+    margin: 0 12px;
+    position: relative;
+    width: 160px;
+    text-align: center;
+}
+
+/* Estilos para los enlaces dentro de los elementos de la lista de navegación */
+.elemento-organizacion a {
+    color: #000000;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.elemento-organizacion li {
+    text-align: center;
+}
+
+/* Estilos para el efecto hover en la navegación */
+.navegacion-organizacion a:hover {
+    border-bottom: 3.1px solid #ef9d0c; /* Ajusta el grosor y el color del subrayado */
+    margin-bottom: 3px; /* Ajusta el espacio entre el texto y el subrayado */
+}
+
+
+
+
+
+
+.bienvenida-contenedor{
+    margin-top: 20px;
+    padding: 0 60px;
+}
+
+.titulo{
+    margin-bottom: 20px;
+}
+
+.contenedor-informacion{
+    display: flex;
+}
+
+.informacion-texto{
+    max-width: 50%;
+    text-align: justify;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.foto{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.foto img{
+    width: 400px;
 }
