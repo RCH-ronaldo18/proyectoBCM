@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
     <head>
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <meta charset="UTF-8">
@@ -37,13 +37,13 @@
                             <a>SERVICIOS</a>
                             <ul class="submenu" style="padding:10px;">
                                 <li>
-                                    <a href="#">METALURGIA</a>
+                                    <a href="alta_especializacion.html">ALTA ESPECIALIZACIÓN</a>
                                 </li>
 
                                 <li>
-                                    <a href="#">INGENIERÍA</a>
+                                    <a href="#">METODOLOGÍA DEL SOPORTE TÉCNICO</a>
                                 </li>
-
+                            <!--
                                 <li>
                                     <a href="#">FABRICACIÓN</a>
                                 </li>
@@ -51,9 +51,7 @@
                                 <li>
                                     <a href="#">CONSTRUCCIÓN</a>
                                 </li>
-                                <li>
-                                    <a href="#">O&M</a>
-                                </li>
+                            -->
                             </ul>
                         </li>
 
@@ -105,28 +103,29 @@
                     <ul class="lista-elementos-organizacion">
 
                         <li class="elemento-organizacion">
-                            <a href="#">Bienvenidos</a>
+                            <a id="ev-organizacion" href="#">Bienvenidos</a>
                         </li>
 
                         <p class="separador-elementos-organizacion">|</p>
 
                         <li class="elemento-organizacion">
-                            <a href="#">Quienes somos</a>
+                            <a id="ev-quien-somos" href="#">Quienes somos</a>
                         </li>
 
                         <p class="separador-elementos-organizacion">|</p>
 
                         <li class="elemento-organizacion">
-                            <a href="#">Diferencial</a>
+                            <a id="ev-valor-diferencial"  href="#">Valor Diferencial</a>
                         </li>
-
                     </ul>
                 </nav>
             </div>
         </div>
 
+
+
         <!-- ======================= Seccion organizacion ====================================== -->
-        <section class="organizacion">
+        <section id="organizacion" class="organizacion">
             <div class="bienvenida-contenedor">
                 <div class="titulo">
                     <h2>BIENVENIDOS</h2>
@@ -139,22 +138,26 @@
                             enorgullece presentarles nuestra sólida propuesta como el socio estratégico ideal para sus proyectos.                 
                             <br>
                             <br>
-                            BCA ha liderado numerosos proyectos tanto a nivel nacional como internacional. Nos 
-                            especializamos en ofrecer soluciones integrales en los sectores de Ingeniería y Arquitectura,
-                            asegurando resultados de alta calidad en Procesamiento de Minerales e Hidrometalurgia.
+                            Hemos liderado numerosos proyectos a nivel nacional, destacándonos en soluciones 
+                            integrales en los sectores de Ingeniería y Arquitectura, con resultados de alta calidad en Procesamiento 
+                            de Minerales e Hidrometalurgia.
                             <br>
                             <br>
-                            BCA está aquí para ser su socio estratégico confiable, ofreciéndole soluciones a medida que reflejan 
-                            nuestro compromiso con la excelencia y la satisfacción del cliente. ¡Bienvenidos a la experiencia BCA, 
+                            En BCA, creemos fervientemente en el potencial de nuestro talentoso equipo humano, respaldado 
+                            por su excelencia técnica y dedicación inquebrantable. Nuestra firma se compromete a brindar 
+                            servicios de consultoría de primer nivel, manteniendo estándares de calidad excepcionales y 
+                            priorizando la seguridad y la sostenibilidad ambiental en cada proyecto que emprendemos.
+                            <br>
+                            <br>
+                            Estamos aquí para ser su socio estratégico confiable, ofreciéndole soluciones a medida que reflejan
+                            nuestro compromiso con la excelencia y la satisfacción del cliente. ¡Bienvenidos a la experiencia 
                             donde su visión se convierte en realidad!
         
                             <p>
                                 <br>
                                 <b>Ing. Abelino Salazar Suárez</b>
                                 <br>
-                                <br>
                                 Gerente General
-                                <br>
                                 <br>
                                 BCA
                             </p>
@@ -168,10 +171,108 @@
             </div>
         </section>
         
-        <!-- ================================= Seccion quienes somos ====================================== -->
-        <section class="quienes-somos">
 
+        <!-- ================================= Seccion quienes somos ====================================== -->
+        <section class="quienes-somos d-none" id="quienes-somos">
+            <div class="Quienes-contenedor">
+                <div class="titulo">
+                    <h2>QUIÉNES SOMOS</h2>
+                    <br>
+                </div>
+                <div class="contenedor-info">
+                    <div class="info-texto">
+                        <p>
+                           BCA GENERAL SERVICES S.A.C, es una  empresa Peruana conformado por el Ing. Abelino Salazar Suárez,
+                           con su amplia experiencia en todo el país viene a posicionarse como una de las mejores empresas en
+                           Consultoría de Ingeniería, Arquitectura y en Procesamiento de Minerales e Hidrometalurgia.
+                           <br>
+                           <br>
+                           <strong>VISIÓN</strong>
+                           <br>
+                           Convertirnos en los próximos 10 años en una  de las empresas líderes en los sectores de consultoría
+                           metalúrgica, ingeniería, construcción y gerenciamiento de proyectos para los sectores minero-metalúrgico,
+                           infraestructura, energía y saneamiento. 
+                           <br>
+                           <br>
+                           <strong>MISIÓN</strong>
+                           <br>
+                           Brindar una gestión innovadora con estándares óptimos de calidad, manejo de riesgos, seguridad,
+                           salud en el trabajo, cuidado del medio ambiente, responsabilidad social y conducta ética empresarial
+                           en consultoría metalúrgica, ingeniería, construcción y gerenciamiento de proyectos, que nos permita 
+                           generar mayor valor y satisfacción a nuestros clientes y a nuestros colaboradores.
+                        </p>
+
+            </div>
+            <div class="foto2">
+                <img src="img/foto2.jpg" alt="">
+            </div>
         </section>
+
+
+
+
+
+
+        <!-- ================================ Sección diferencial ========================================= -->
+        <section class="valor-diferencial d-none" id="valor-diferencial">
+            <div class="valor-contenedor">
+                <div class="titulo">
+                    <h2>VALOR DIFERENCIAL</h2>
+                </div>
+                <div class="contenedor-informa">
+                    <div class="informa-texto">
+                        <p>
+                            <br>
+                            VALORES CORPORATIVOS
+                            <br>
+                            <br>
+                            <li>
+                                <strong>Innovación:</strong>
+                                Nos destacamos por nuestra creatividad y apertura a nuevas ideas, proponiendo servicios innovadores 
+                                y desarrollando herramientas técnicas y de gestión vanguardistas. Buscamos constantemente maneras de aportar 
+                                ventajas competitivas, generar valor en los procesos de nuestros clientes y contribuir al éxito continuo de la empresa.
+                            </li>
+                                <br>
+                            <li>
+                                <strong>Compromiso:</strong>
+                                Fomentamos actividades que cultivan el compromiso con la empresa, permitiendo que cada miembro sienta 
+                                la organización como propia y sea plenamente consciente de la importancia de cumplir con los compromisos acordados.
+                            </li>
+                                <br>
+                            <li>
+                                <strong>Excelencia:</strong>
+                                Orientamos nuestros esfuerzos hacia la excelencia como una meta fundamental en nuestra realización organizacional.
+                                Trabajamos de manera diligente para alcanzar los resultados previstos, reconociendo la importancia de esforzarnos por mejorar 
+                                continuamente y ejecutar nuestras actividades de manera óptima.
+                            </li>
+                                <br>
+                            <li>
+                                <strong>Integridad:</strong>
+                                En nuestra empresa, promovemos y exigimos que todos los integrantes mantengan una conducta ética,
+                                transparente e integral, tanto dentro como fuera de los entornos laborales
+                            </li>
+                                <br> 
+                            <li>
+                                <strong>Seguridad y salud:</strong>
+                                Consideramos la Seguridad y la Salud en el Trabajo como una prioridad empresarial, integrándola en todas
+                                nuestras acciones y decisiones. Adoptamos un enfoque proactivo para proteger a las personas, la propiedad y el medio ambiente.
+                            </li>
+                        </p>
+
+                    </div>
+
+                    <div class="foto3">
+                        <img src="img/foto3.jpeg" alt="">
+                    </div>
+                </section>
+        
+
+
+
+
+
+
+
 
         <!-- footer -->
         <footer>
@@ -225,5 +326,35 @@
             </div>
         </footer>
     </main>
+
+
+    <!-- seccion organizacion: bienvenida, quienes somos y valor diferencial -->
+    <script>
+        window.addEventListener('DOMContentLoaded',()=>{
+            let o = document.getElementById('organizacion');
+            let qs = document.getElementById('quienes-somos');
+            let pq = document.getElementById('valor-diferencial');
+
+            document.getElementById('ev-quien-somos').addEventListener('click',()=>{
+                o.classList.add('d-none');
+                qs.classList.remove('d-none');
+                pq.classList.add('d-none');
+            })
+
+            document.getElementById('ev-organizacion').addEventListener('click',()=>{
+                o.classList.remove('d-none');
+                qs.classList.add('d-none');
+                pq.classList.add('d-none');
+            })
+            
+            document.getElementById('ev-valor-diferencial').addEventListener('click',()=>{
+               o.classList.add('d-none');
+               qs.classList.add('d-none');
+               pq.classList.remove('d-none'); 
+            });
+        });
+    </script>
+
+
 </body>
 </html>
