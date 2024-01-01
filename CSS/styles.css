@@ -1,5 +1,5 @@
 /* Importa la fuente Poppins desde Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
 
 /* Estilo global para todos los elementos en la página */
 *{
@@ -12,7 +12,7 @@
 /* Estilos para el encabezado */
 header{
     width: 100%;
-    height: 8em;
+    height: 5.25em;
 }
 
 /* Estilos para el logo del sitio */
@@ -22,7 +22,7 @@ header{
 }
 
 #site-logo img {
-    width: 140px; /* Ajusta el ancho del logo */
+    width: 73px; /* Ajusta el ancho del logo */
 }
 
 /* Estilos para la lista no ordenada */
@@ -40,7 +40,7 @@ ul li a {
 /* Estilos para el contenedor del encabezado */
 .contenedor-header{
     width: 100%;
-    height: 9em;
+    height: 5.25em;
     display: flex;
     justify-content: space-around;
 }
@@ -77,8 +77,8 @@ ul li a {
 /* Estilos para los enlaces dentro de los elementos de la lista de navegación */
 .elemento a {
     color: #000000;
-    font-size: 18px;
-    font-weight: 600;
+    font-size: 20px;
+    font-weight: bold;
 }
 
 .elemento li {
@@ -118,18 +118,157 @@ ul li a {
     color: black;
 }
 
+/*Banner*/
+.img-banner{
+    height: 87vb;
+}
+.img-banner img{
+    width: 100%;
+    height: 87vh;
+}
+
+/*Seccion servicios*/
+
+.servicios{
+    width: 100%;
+    height: 100vh;
+}
+.servicios .encabezado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 84px;
+    flex-direction: column;
+}
+
+.servicios h1 {
+    font-size: 35px;
+    font-weight: bold;
+    height: 45px;
+}
+
+.encabezado .linea{
+    width: 7%;
+    border: 2px #EF9D0C solid;
+}
+
+.contenedor-tarjetas{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    height: 82%;
+}
+
+.tarjeta {
+    width: 566px;
+    height: 508.5px;
+}
+
+.tarjeta .titulo-tarjeta{
+    background: #171515;
+    color: #ffff;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    height: 84px;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px 20px 0 0;
+    font-weight: 600;
+}
+
+.tarjeta .linea{
+    width: 16%;
+    border: 2px #EF9D0C solid;
+}
+.tarjeta img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0 0 20px 20px;
+    object-fit: fill;
+}
+
+.tarjeta .img-tarjeta{
+    height: 85%;
+}
+
+/*Seccion diferenciales*/
+.diferenciales{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top: 50px;
+}
+
+.diferenciales .tarjetas-diferenciales{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.diferenciales .diferencial-contenedor{
+    max-width: 20%;
+}
+
+.diferenciales .img-diferencial,
+.diferenciales .texto-diferencial{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: justify;
+}
 
 
 
+.texto-diferencial h1{
+    color: #EF9D0C;
+}
 
+/*===================Contacto============*/
 
 /* parte del formulario*/
 
 /* Estilos para el contenedor del formulario */
 .img-contacto img{
     width: 100%;
-    height: 85vh;
+    height: 87vh;   
 }
+
+.contenedor-formas-contacto{
+    margin: 30px 0 30px 0;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.contenedor-formas-contacto .texto-contacto{
+    max-width: 200px;
+    width: 200px;
+    font-size: 14px;
+}
+
+.contacto .titulo{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.contenedor-contacto .img{
+    font-size: 35px;
+    
+}
+
+.separador-contacto{
+    width: 10%;
+    border: 1px #000 solid;
+    height: 0px;
+    transform: rotate(90deg) translateX(46%);
+}
+
 
 .formulario {
     width: 100%;
@@ -220,47 +359,82 @@ ul li a {
 }
 
 /* Estilos para el pie de página */
+
+footer{
+    background: #171515;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 #footerBCA{
-    background: #f3ac25;
+    padding: 32px 0 32px 0; 
     width: 100%;
     height: 100%;
     display: inline-flex;
     justify-content: space-around;
     align-items: center;
+    color: #ffffff;
+}
+
+#footerBCA h1{
+    max-width: 260px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.redes-contenedor h3{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#footerBCA .redes-sociales{
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.redes-sociales img{
+    width: 45px;
+}
+
+#footerBCA .btn-contactenos{
+    background: #000000;
+    width: 280px;
+    height: 64px;
+    color: #ffffff;
+    border-radius: 15px;
+    font-size: 20px;
+    border-style: none;
+    font-weight: 500;
+    cursor: pointer;
+
+}
+
+#footerBCA .btn-contactenos:hover{
+    background: #ffffff;
+    color: #000000;
+}
+
+footer .separador-footer{
+    width: 95%;
+    border: 1px #fff solid;
+}
+
+footer .copyright{
+    font-size: 15px;
+    margin: 26px 0 26px 0;
+    color: #838383;
+    font-weight: 600;
 }
 
 /* Estilos para el contenedor de información de contacto en el pie de página */
-.contenedor-contacto{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
-/* Estilos para la imagen de contacto en el pie de página */
-.img{
-    width: 55px;
-    height: 55px;
-    border: 3px solid black;
-    border-radius: 50%;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    font-size: 35px;
-}
 
-/* Estilos para la información de contacto en el pie de página */
-.texto-contacto{
-    margin-left: 10px;
-}
 
-.texto-contacto span{
-    font-weight: bold;
-}
 
-.texto-contacto p{
-    max-width: 200px;
-}
+
 
 /* ============================ Organizaacion ============================*/
 

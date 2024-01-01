@@ -22,7 +22,7 @@
         <div class="contenedor-header">
             <div id="site-logo">
                 <a href="index.html" title="BCA">
-                    <img src="img/logoRecortado.jpg" alt="logo BCA">
+                    <img src="img/icon1.png" alt="logo BCA">
                 </a>
             </div>
             <div class="navegacion">
@@ -105,13 +105,13 @@
                     <ul class="lista-elementos-servicios">
 
                         <li class="elemento-servicios">
-                            <a id=" " href="#">Alta especialización</a>
+                            <a id="ev-alta-especializacion" href="#">Alta especialización</a>
                         </li>
 
                         <p class="separador-elementos-servicios">|</p>
 
                         <li class="elemento-servicios">
-                            <a id=" " href="#">Metodología del soporte técnico</a>
+                            <a id="ev-metodologia-soporte" href="#">Metodología del soporte técnico</a>
                         </li>
                     </ul>
                 </nav>
@@ -122,8 +122,7 @@
 
 
 
-        <!-- ======================= Seccion servicios ====================================== -->
-        <section id="servicios" class="servicios">
+        <section id="AltaEspecializacion" class="servicios">
             <div class="alta-contenedor">
                 <div class="titulo">
                     <h2>ALTA ESPECIALIZACIÓN</h2>
@@ -131,85 +130,120 @@
                 <br>
                 <div class="contenedor-inf">
                     <div class="informacion-txt">
-                        <p>
                             <li>
                                 Diseño, Construcción y Optimización Operacional de Plantas Hidrometalurgicas de oro y  
                                 plata (Lixiviacion en pilas y/o agitación, CIL, CIP, CIC, Merrill Crowe).
                             </li>
+                                <br>
                                 <br>
                             <li>
                                 Diseño, Construcción y Optimizacion de plantas de tratamiento de aguas 
                                 (Destrucción de cianuro de plantas de lixiviación de oro/playa y plantas de tratamiento de aguas ácidas).
                             </li>
                                 <br>
+                                <br> 
                             <li>
-                                Diseño y Optimización Operacional de Plantas Concentradoras.
+                                Diseño, Construcción y Optimización Operacional de Plantas de 
+                                Procesamiento de Metal
                             </li>
-                        </p>
                     </div>
 
                     <div class="foto2">
-                        <img src=" " alt="imagen">
+                        <img src="img/imgAltaEspecializacion.jpg" alt="imagen">
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="MetodologiaSoporteTecnico" id="MetodologiaSoporteTecnico">
+            <div class="alta-contenedor">
+                <div class="titulo">
+                    <h2>Metodología de soporte tecnico</h2>
+                </div>
+                <br>
+                <div class="contenedor-inf">
+                    <div class="informacion-txt">
+                            <li>
+                                Soporte Metalúrgico y de Control de Procesos en Plantas de Procesamiento de 
+                                Minerales, Hidrometalúrgicas y Tratamiento de aguas.
+                            </li>
+                                <br>
+                                <br>
+                            <li>
+                                Soporte de Procesos en el desarrollo de Proyectos: Nuevos y de Mejoras 
+                                Operacionales.
+                            </li>
+                                <br>
+                                <br> 
+                            <li>
+                                Auditorías operacionales orientados a detectar oportunidades de mejoras 
+                                para incrementar la productividad de las operaciones.
+                            </li>
+                                <br>
+                                <br> 
+                            <li>
+                                Diseño/ejecución/evaluación de Pruebas Metalúrgicas para desarrollo
+                                 de proyectos y optimización de plantas.
+                            </li>
+                    </div>
+
+                    <div class="foto2">
+                        <img src="img/imgMetodoligiaSoporte.jpg" alt="imagen">
+                    </div>
+                </div>
+            </div>
+        </section>
                    
                     
     </main>
 
+    <!-- seccion organizacion: bienvenida, quienes somos y valor diferencial -->
+    <script>
+        window.addEventListener('DOMContentLoaded',()=>{
+            let especializacion = document.getElementById('AltaEspecializacion');
+            let soporte = document.getElementById('MetodologiaSoporteTecnico');
+
+            document.getElementById('ev-alta-especializacion').addEventListener('click',()=>{
+                especializacion.classList.remove('d-none');
+                soporte.classList.add('d-none');
+            })
+
+            document.getElementById('ev-metodologia-soporte').addEventListener('click',()=>{
+                especializacion.classList.add('d-none');
+                soporte.classList.remove('d-none');
+            });
+        });
+    </script>
 
 
 
         <!-- footer -->
         <footer>
             <div id="footerBCA">
-                <div class="contacto">
-                    <div class="contenedor-contacto">
-                        <div class="img">
-                            <i class="fa-regular fa-building"></i>
-                        </div>
-                        <div class="texto-contacto">
-                            <span class="titulo">Oficina Principal</span>
-                            <p>Jirón Canto Rodado 534 San Juan de Lurigancho</p>
-                        </div>
-                    </div>
-                </div>
-    
-                <div class="contacto">
-                    <div class="contenedor-contacto">
-                        <div class="img">
-                            <i class="fa-solid fa-phone"></i>
-                        </div>
-                        <div class="texto-contacto">
-                        <span class="titulo">Teléfono</span>
-                        <p>+51974132970</p>
-                        </div>
-                    </div>
-                </div>
-    
-                <!--
-                <div id="contacto">
-                    <div class="contenedor-contacto">
-                        <div class="img">
-                            <i class="fa-solid fa-phone"></i>
-                        </div>
-                        <span class="titulo">Planta de fabricaciónes metalmecanicas</span>
-                        Av. Cajamarquilla Mz. D Lt. 4 Urb. Nievería Lurigancho - Lima - Perú.
-                    </div>
-                </div>
-                -->
-                <div class="contacto">
-                    <div class="contenedor-contacto">
-                        <div class="img">
-                            <i class="fa-regular fa-envelope"></i>
-                        </div>
-                        <div class="texto-contacto">
-                            <span class="titulo">Correo</span>
-                            <p>abelinosalazar@bca.pe</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
+                
+                <h1>BCA General Service S.A.C.</h1>
 
+                <div class="redes-contenedor">
+                    <h3>REDES SOCIALES</h3>
+                    <ul class="redes-sociales">
+                    <li><img src="img/linkedin.png" alt=""></li>
+                    <li><img src="img/facebook.png" alt=""></li>
+                    </ul>
+                </div>
+                
+
+                <a href="Contactenos.html"><button class="btn-contactenos">CONTÁCTENOS</button></a>
+
+                
+                    
+
+            </div>
+            <div class="separador-footer"></div>
+            <div class="copyright">
+                <p>Copyright © 2024 BCA General Services S.A.C. Todos los derechos reservados</p>
+            </div>
+            
+        </footer>
 
     </div>
 </body>
